@@ -60,4 +60,4 @@ let result = {
   and: [...output],
 };
 
-console.log('result:', result);
+console.log('output:', result);
