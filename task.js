@@ -19,29 +19,29 @@ const newStr = optionRule
   .replaceAll('}', '')
   .replaceAll('(', '')
   .replaceAll(')', '');
-console.log(newStr);
+// console.log(newStr);
 
 let strArr = newStr.split('AND');
 
-console.log(strArr);
+// console.log(strArr);
 
 let allVal = [];
 
 strArr.forEach((value) => {
-  console.log(value);
-  if (value.indexOf('OR') > -1) {
+  //   console.log(value);
+  if (value.indexOf('OR') != -1) {
     allVal = [...allVal, value];
   } else {
     allVal = [...allVal, value];
   }
 });
 
-const container = {
-  and: [...allVal],
-};
+// const container = {
+//   and: [...allVal],
+// };
 
-const output = container.and.map((value) => {
-  if (value.indexOf('OR') > -1) {
+const output = allVal.map((value) => {
+  if (value.indexOf('OR') != -1) {
     const filtered = value.split('OR');
 
     const strRmv = filtered.map((vl) => {
@@ -60,4 +60,4 @@ let result = {
   and: [...output],
 };
 
-// console.log('result:', result);
+console.log('result:', result);
