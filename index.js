@@ -20,13 +20,14 @@ const cardDistribution = (arr) => {
     newArr.push(card);
   }
   newArr.sort((a, b) => {
-    if (a.priority < b.priority) {
-      return -1;
-    }
-    if (a.priority > b.priority) {
-      return 1;
-    }
-    return 0;
+    return a.priority < b.priority ? -1 : 1;
+    // if (a.priority < b.priority) {
+    //   return -1;
+    // }
+    // if (a.priority > b.priority) {
+    //   return 1;
+    // }
+    // return 0;
   });
   console.log(newArr);
 };
