@@ -60,6 +60,7 @@ console.log(duplicate);
 //how to find unique number from an array
 
 const unique = numbers.filter((value, index, array) => {
+  console.log(value, index, array.indexOf(value));
   return array.indexOf(value) === index;
 });
 
