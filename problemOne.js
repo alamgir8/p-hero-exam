@@ -8,9 +8,9 @@ console.log(getRandomNumber(1, 6));
 
 //serial name with alphabetically
 
-const name = ['Alamgir', 'Alamin', 'Sakib', 'Faruk'];
+const names = ['Alamgir', 'Alamin', 'Sakib', 'Faruk'];
 
-console.log(name.sort());
+console.log(names.sort());
 
 //number serial with alphabetically
 const rollNumbers = [12, 5, 13, 50, 100];
@@ -47,3 +47,20 @@ const countVowels = (sentence) => {
 };
 
 console.log(countVowels('My name is Alamgir Hossain'));
+
+//how to find duplicate value from an array
+const numbers = [12, 11, 10, 5, 12, 13, 10, 5, 10, 12, 13, 15, 16, 17, 18];
+
+const duplicate = numbers.filter((value, index, array) => {
+  return array.indexOf(value) !== index;
+});
+
+console.log(duplicate);
+
+//how to find unique number from an array
+
+const unique = numbers.filter((value, index, array) => {
+  return array.indexOf(value) === index;
+});
+
+console.log(unique);
