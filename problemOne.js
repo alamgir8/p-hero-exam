@@ -28,3 +28,22 @@ const isLeapYear = (year) => {
 };
 
 isLeapYear(2024);
+
+//how many vowel have in a sentence
+
+const vowels = ['a', 'o', 'f', 'e', 'g', 'i', 'z'];
+
+const countVowels = (sentence) => {
+  let count = 0;
+
+  const letters = Array.from(sentence);
+
+  letters.forEach((value) => {
+    if (vowels.includes(value)) {
+      count++;
+    }
+  });
+  return count;
+};
+
+console.log(countVowels('My name is Alamgir Hossain'));
