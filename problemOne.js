@@ -65,3 +65,5 @@ const unique = numbers.filter((value, index, array) => {
 });
 
 console.log(unique);
+
+//the
