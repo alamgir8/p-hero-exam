@@ -29,10 +29,16 @@ const factorialize = (num) => {
   //     product *= i;
   //   }
   //   return product;
-  if (num === 0) {
-    return 1;
-  }
-  return num * factorialize(num - 1);
+
+  //second method
+
+  //   if (num === 0) {
+  //     return 1;
+  //   }
+  //   return num * factorialize(num - 1);
+
+  //third
+  return num === 0 ? 1 : num * factorialize(num - 1);
 };
 
-console.log(factorialize(5));
+console.log(factorialize(10));
