@@ -79,3 +79,12 @@ const nestedArray = [
 ];
 
 console.log(nestedArray[4][0][0][0][0]);
+
+//Add Key-Value Pairs to JavaScript Objects
+let foods = {
+  apple: 25,
+  orange: 32,
+  plums: 28,
+};
+
+console.log(foods);
