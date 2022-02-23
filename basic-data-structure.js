@@ -11,3 +11,11 @@ const colorNames = (arr) => {
 };
 
 console.log(colorNames(['Red', 'White', 'Green', 'Blue', 'Yellow']));
+
+//copy array items with slice method
+const foreCast = (arr) => {
+  return arr.slice(2, 4);
+};
+console.log(
+  foreCast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])
+);
