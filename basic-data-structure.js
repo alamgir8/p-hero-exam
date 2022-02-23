@@ -31,3 +31,11 @@ const copyArray = (arr, num) => {
 };
 
 console.log(copyArray([true, false, true], 2));
+
+//Combine Arrays with the Spread Operator
+const combineArray = (arr) => {
+  let newArr = ['learning', ...arr, 'is', 'fun'];
+  return newArr;
+};
+
+console.log(combineArray(['to', 'code']));
