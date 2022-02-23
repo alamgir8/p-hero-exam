@@ -10,6 +10,29 @@ console.log(convertToFahrenheit(30));
 //Reverse a String
 const reverseString = (str) => {
   return str.split('').reverse().join('');
+
+  //second method
+
+  //   let reversedStr = '';
+  //   for (let i = str.length - 1; i >= 0; i--) {
+  //     reversedStr += str[i];
+  //   }
+  //   return reversedStr;
 };
 
 console.log(reverseString('hello'));
+
+//Factorialize a Number
+const factorialize = (num) => {
+  //   let product = 1;
+  //   for (let i = 2; i <= num; i++) {
+  //     product *= i;
+  //   }
+  //   return product;
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorialize(num - 1);
+};
+
+console.log(factorialize(5));
