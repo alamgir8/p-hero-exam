@@ -19,3 +19,15 @@ const foreCast = (arr) => {
 console.log(
   foreCast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])
 );
+
+//Copy an Array with the Spread Operator
+const copyArray = (arr, num) => {
+  let newArr = [];
+  while (num >= 1) {
+    newArr.push([...arr]);
+    num--;
+  }
+  return newArr;
+};
+
+console.log(copyArray([true, false, true], 2));
