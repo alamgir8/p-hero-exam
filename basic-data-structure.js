@@ -39,3 +39,10 @@ const combineArray = (arr) => {
 };
 
 console.log(combineArray(['to', 'code']));
+
+//Check For The Presence of an Element With indexOf()
+const checkElement = (arr, elem) => {
+  return arr.indexOf(elem) === -1 ? false : true;
+};
+
+console.log(checkElement(['squash', 'onions', 'shallots'], 'mushrooms'));
