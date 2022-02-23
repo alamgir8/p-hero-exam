@@ -6,3 +6,10 @@ const convertToFahrenheit = (celsius) => {
 };
 
 console.log(convertToFahrenheit(30));
+
+//Reverse a String
+const reverseString = (str) => {
+  return str.split('').reverse().join('');
+};
+
+console.log(reverseString('hello'));
