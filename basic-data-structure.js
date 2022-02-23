@@ -154,3 +154,29 @@ const isEveryoneHere = (userObj) => {
 };
 
 console.log(isEveryoneHere(users));
+
+//Iterate Through the Keys of an Object with a for...in Statement
+const usersObject = {
+  Alan: {
+    online: false,
+  },
+  Jeff: {
+    online: true,
+  },
+  Sarah: {
+    online: false,
+  },
+};
+
+const countOnline = (usersObj) => {
+  // Only change code below this line
+  let userOnline = 0;
+
+  for (let usersObject in usersObj) {
+    usersObj[usersObject].online === true && userOnline++;
+  }
+  return userOnline;
+  // Only change code above this line
+};
+
+console.log(countOnline(usersObject));
