@@ -125,7 +125,7 @@ console.log(checkInventory('apples'));
 let users = {
   Alan: {
     age: 27,
-    online: true,
+    online: false,
   },
   Jeff: {
     age: 32,
@@ -133,7 +133,7 @@ let users = {
   },
   Sarah: {
     age: 48,
-    online: true,
+    online: false,
   },
   Ryan: {
     age: 19,
@@ -180,3 +180,10 @@ const countOnline = (usersObj) => {
 };
 
 console.log(countOnline(usersObject));
+
+//Generate an Array of All Object Keys with Object.keys()
+const getArrayOfUsers = (obj) => {
+  return Object.keys(obj);
+};
+
+console.log(getArrayOfUsers(users));
