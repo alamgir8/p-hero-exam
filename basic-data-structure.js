@@ -68,3 +68,14 @@ console.log(
     3
   )
 );
+
+//Create complex multi-dimensional arrays
+const nestedArray = [
+  'level 1', // nestedArray[0]
+  ['level 2'], //nestedArray[1][0]
+  [['level 3', 'deep']], //nestedArray[2][0][0]
+  [[['level 4', 'deeper']]], //nestedArray[3][0][0][0]
+  [[[['level 5', 'deepest']]]], //nestedArray[4][0][0][0][0]
+];
+
+console.log(nestedArray[4][0][0][0][0]);
