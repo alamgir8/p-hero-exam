@@ -31,4 +31,17 @@ console.log(gridTraveler(1, 1));
 console.log(gridTraveler(3, 4));
 
 //best gridTraveler
-const bestGridTraveler = (m, n, memo = {}) => {};
+const bestGridTraveler = (m, n, memo = {}) => {
+  const key = m + ',' + n;
+
+  if (key in memo) return memo[key];
+  if (m === 1 && n === 1) return 1;
+  if (m === 0 || n === 0) return 0;
+
+  memo[key] = bestGridTraveler(m - 1, n) + bestGridTraveler(m, n - 1);
+  return memo[key];
+};
+
+//here m = row, n = column
+console.log(bestGridTraveler(1, 1));
+console.log(bestGridTraveler(18, 18));
