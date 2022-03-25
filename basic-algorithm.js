@@ -87,3 +87,10 @@ console.log(
     [1000, 1001, 857, 1],
   ])
 );
+
+//Confirm the Ending
+const confirmEnding = (str, target) => {
+  return str;
+};
+
+console.log(confirmEnding('Bastian', 'n'));
