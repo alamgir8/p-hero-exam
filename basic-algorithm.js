@@ -91,7 +91,10 @@ console.log(
 //Confirm the Ending
 const confirmEnding = (str, target) => {
   //first method
-  return str.slice(str.length - target.length) === target;
+  // return str.slice(str.length - target.length) === target;
+
+  //second method
+  return str.slice(-target.length) === target;
 };
 
 console.log(confirmEnding('Bastian', 'n'));
