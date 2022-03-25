@@ -49,6 +49,8 @@ const findLongestWordLength = (str) => {
   //first method
   return str.split(' ').reduce((long, word) => Math.max(long, word.length), 0);
 
+  //second method
+
   // return Math.max(...str.split(' ').map((word) => word.length));
 };
 
