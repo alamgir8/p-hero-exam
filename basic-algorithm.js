@@ -42,3 +42,13 @@ const factorialize = (num) => {
 };
 
 console.log(factorialize(10));
+
+//find the longest word in a sentence
+
+const findLongestWordLength = (str) => {
+  return Math.max(...str.split('').map((word) => word.length));
+};
+
+console.log(
+  findLongestWordLength('The quick brown fox jumped over the lazy dog')
+);
