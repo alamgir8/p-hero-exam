@@ -60,7 +60,12 @@ console.log(
 
 //Return Largest Numbers in Arrays
 
-const largestNumberInArray = (arr) => {};
+const largestNumberInArray = (arr) => {
+  //first method
+  return arr.map((group) => {
+    return group.reduce((preV, currV) => (currV > preV ? currV : preV));
+  });
+};
 
 console.log(
   largestNumberInArray([
