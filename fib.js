@@ -29,3 +29,6 @@ const gridTraveler = (m, n) => {
 //here m = row, n = column
 console.log(gridTraveler(1, 1));
 console.log(gridTraveler(3, 4));
+
+//best gridTraveler
+const bestGridTraveler = (m, n, memo = {}) => {};
