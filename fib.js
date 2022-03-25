@@ -38,7 +38,8 @@ const bestGridTraveler = (m, n, memo = {}) => {
   if (m === 1 && n === 1) return 1;
   if (m === 0 || n === 0) return 0;
 
-  memo[key] = bestGridTraveler(m - 1, n) + bestGridTraveler(m, n - 1);
+  memo[key] =
+    bestGridTraveler(m - 1, n, memo) + bestGridTraveler(m, n - 1, memo);
   return memo[key];
 };
 
