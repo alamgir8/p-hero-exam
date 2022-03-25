@@ -62,9 +62,10 @@ console.log(
 
 const largestNumberInArray = (arr) => {
   //first method
-  return arr.map((group) => {
-    return group.reduce((preV, currV) => (currV > preV ? currV : preV));
-  });
+  // return arr.map((group) => {
+  //   return group.reduce((preV, currV) => (currV > preV ? currV : preV));
+  // });
+  //second method  recursive approach
 };
 
 console.log(
