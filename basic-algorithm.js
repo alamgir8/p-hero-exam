@@ -46,7 +46,7 @@ console.log(factorialize(10));
 //find the longest word in a sentence
 
 const findLongestWordLength = (str) => {
-  return Math.max(...str.split('').map((word) => word.length));
+  return Math.max(...str.split(' ').map((word) => word.length));
 };
 
 console.log(
