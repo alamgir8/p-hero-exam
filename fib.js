@@ -27,6 +27,7 @@ const gridTraveler = (m, n) => {
 };
 
 //here m = row, n = column
+//if we use large number then it will takes so much time space to finish
 console.log(gridTraveler(1, 1));
 console.log(gridTraveler(3, 4));
 
