@@ -45,6 +45,7 @@ const bestGridTraveler = (m, n, memo = {}) => {
 };
 
 //here m = row, n = column
+//it is same function with little change uses memorize version of result
 console.log(bestGridTraveler(1, 1));
 console.log(bestGridTraveler(18, 18));
 console.log(bestGridTraveler(25, 18));
