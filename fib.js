@@ -125,6 +125,9 @@ const bestHowSum = (targetNumber, numbers, memo = {}) => {
     const result = bestHowSum(reminder, numbers, memo);
     if (result !== null) {
       memo[targetNumber] = [...result, num];
+      return memo[targetNumber];
     }
   }
+  memo[targetNumber] = null;
+  return null;
 };
