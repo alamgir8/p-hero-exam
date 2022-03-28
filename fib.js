@@ -92,3 +92,9 @@ console.log(bestCanSum(7, [2, 4]));
 console.log(bestCanSum(8, [2, 3, 7]));
 console.log(bestCanSum(9, [2, 3, 6]));
 console.log(bestCanSum(300, [7, 13]));
+
+//generate combination of array from an array
+const howSum = (targetNumber, numbers) => {
+  if (targetNumber === 0) return [];
+  if (targetNumber < 0) return null;
+};
