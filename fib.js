@@ -65,7 +65,7 @@ const canSum = (targetNumber, numbers) => {
 };
 
 console.log(canSum(7, [2, 3]));
-console.log(canSum(7, [2, 3, 4, 7]));
+console.log(canSum(7, [2, 4]));
 console.log(canSum(8, [2, 3, 7]));
 console.log(canSum(9, [2, 3, 6]));
-console.log(canSum(200, [7, 10, 20, 9, 5, 3]));
+console.log(canSum(200, [7, 13]));
