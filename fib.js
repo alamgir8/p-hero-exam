@@ -64,11 +64,11 @@ const canSum = (targetNumber, numbers) => {
   return false;
 };
 
-console.log(canSum(7, [2, 3]));
-console.log(canSum(7, [2, 4]));
-console.log(canSum(8, [2, 3, 7]));
-console.log(canSum(9, [2, 3, 6]));
-console.log(canSum(300, [7, 13]));
+// console.log(canSum(7, [2, 3]));
+// console.log(canSum(7, [2, 4]));
+// console.log(canSum(8, [2, 3, 7]));
+// console.log(canSum(9, [2, 3, 6]));
+// console.log(canSum(300, [7, 13]));
 
 //best way to do same is upper function
 const bestCanSum = (targetNumber, numbers, memo = {}) => {
@@ -88,17 +88,17 @@ const bestCanSum = (targetNumber, numbers, memo = {}) => {
 };
 
 console.log(bestCanSum(7, [2, 3]));
-console.log(bestCanSum(7, [2, 4]));
-console.log(bestCanSum(8, [2, 3, 7]));
-console.log(bestCanSum(9, [2, 3, 6]));
-console.log(bestCanSum(300, [7, 13]));
+// console.log(bestCanSum(7, [2, 4]));
+// console.log(bestCanSum(8, [2, 3, 7]));
+// console.log(bestCanSum(9, [2, 3, 6]));
+// console.log(bestCanSum(300, [7, 13]));
 
 //generate combination of array from an array
 const howSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
 
-  for (let num in numbers) {
+  for (let num of numbers) {
     const reminder = targetNumber - num;
     const result = howSum(reminder, numbers);
     if (result !== null) {
@@ -112,4 +112,4 @@ console.log(howSum(7, [2, 3]));
 console.log(howSum(7, [2, 4]));
 console.log(howSum(8, [2, 3, 7]));
 console.log(howSum(9, [2, 3, 6]));
-console.log(howSum(300, [7, 13]));
+console.log(howSum(300, [7, 14]));
