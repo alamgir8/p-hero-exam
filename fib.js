@@ -50,3 +50,5 @@ console.log(bestGridTraveler(1, 1));
 console.log(bestGridTraveler(18, 18));
 console.log(bestGridTraveler(25, 18));
 console.log(bestGridTraveler(30, 30));
+
+//generate target number from an array
