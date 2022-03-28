@@ -78,8 +78,12 @@ const bestCanSum = (targetNumber, numbers, memo = {}) => {
 
   for (let num of numbers) {
     const reminder = targetNumber - num;
-    if (bestCanSum(reminder, numbers) === true) return true;
+    if (bestCanSum(reminder, numbers) === true) {
+      memo[targetNumber] = true;
+      return true;
+    }
   }
+  memo[targetNumber] = false;
   return false;
 };
 
