@@ -52,3 +52,13 @@ console.log(bestGridTraveler(25, 18));
 console.log(bestGridTraveler(30, 30));
 
 //generate target number from an array
+
+const canSum = (targetNumber, numbers) => {
+  console.log('here');
+};
+
+console.log(canSum(7, [2, 3]));
+console.log(canSum(7, [2, 3]));
+console.log(canSum(7, [2, 3]));
+console.log(canSum(7, [2, 3]));
+console.log(canSum(7, [2, 3]));
