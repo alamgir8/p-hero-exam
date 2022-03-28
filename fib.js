@@ -119,4 +119,12 @@ const bestHowSum = (targetNumber, numbers, memo = {}) => {
   if (targetNumber in memo) return memo[targetNumber];
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
+
+  for (let num of numbers) {
+    const reminder = targetNumber - num;
+    const result = bestHowSum(reminder, numbers, memo);
+    if (result !== null) {
+      memo[targetNumber] = [...result, num];
+    }
+  }
 };
