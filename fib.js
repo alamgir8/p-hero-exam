@@ -111,8 +111,8 @@ const howSum = (targetNumber, numbers) => {
 console.log(howSum(7, [2, 3]));
 console.log(howSum(7, [2, 4]));
 console.log(howSum(8, [2, 3, 7]));
-console.log(howSum(9, [2, 3, 6]));
-console.log(howSum(300, [7, 14]));
+// console.log(howSum(9, [2, 3, 6]));
+// console.log(howSum(300, [7, 14]));
 
 //doing this in better way
 const bestHowSum = (targetNumber, numbers, memo = {}) => {
@@ -131,3 +131,5 @@ const bestHowSum = (targetNumber, numbers, memo = {}) => {
   memo[targetNumber] = null;
   return null;
 };
+console.log(bestHowSum(9, [2, 3, 6]));
+console.log(bestHowSum(300, [7, 14]));
