@@ -98,3 +98,9 @@ const howSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
 };
+
+console.log(howSum(7, [2, 3]));
+console.log(howSum(7, [2, 4]));
+console.log(howSum(8, [2, 3, 7]));
+console.log(howSum(9, [2, 3, 6]));
+console.log(howSum(300, [7, 13]));
