@@ -72,6 +72,7 @@ console.log(canSum(300, [7, 13]));
 
 //best way to do same is upper function
 const bestCanSum = (targetNumber, numbers, memo = {}) => {
+  if (targetNumber in memo) return memo[targetNumber];
   if (targetNumber === 0) return true;
   if (targetNumber < 0) return false;
 
