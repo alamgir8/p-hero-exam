@@ -55,6 +55,12 @@ console.log(bestGridTraveler(30, 30));
 
 const canSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return true;
+
+  for (let num of numbers) {
+    const reminder = targetNumber - num;
+    if (canSum(reminder, numbers) === true) return true;
+  }
+  return false;
 };
 
 console.log(canSum(7, [2, 3]));
