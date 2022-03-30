@@ -172,6 +172,15 @@ const bestBestSum = (targetNumber, numbers, memo) => {
   for (let num of numbers) {
     const reminder = targetNumber - num;
     const reminderCombination = bestBestSum(reminder, numbers, memo);
+    if (reminderCombination !== null) {
+      const combination = [...reminderCombination, num];
+      if (
+        shortestCombination === null ||
+        combination.length < shortestCombination.length
+      ) {
+        shortestCombination = combination;
+      }
+    }
   }
 };
 
