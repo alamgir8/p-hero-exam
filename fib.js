@@ -134,7 +134,10 @@ const bestHowSum = (targetNumber, numbers, memo = {}) => {
 console.log(bestHowSum(9, [2, 3, 6]));
 console.log(bestHowSum(300, [7, 14]));
 
-const bestSum = (targetNumber, numbers) => {};
+const bestSum = (targetNumber, numbers) => {
+  if (targetNumber === 0) return [];
+  if (targetNumber < 0) return null;
+};
 
 console.log(bestHowSum(9, [2, 3, 6]));
 console.log(bestHowSum(300, [1, 4, 6, 7, 14]));
