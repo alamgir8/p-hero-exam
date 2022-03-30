@@ -134,6 +134,8 @@ const bestHowSum = (targetNumber, numbers, memo = {}) => {
 console.log(bestHowSum(9, [2, 3, 6]));
 console.log(bestHowSum(300, [7, 14]));
 
+///find out shortest combination of array
+
 const bestSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
