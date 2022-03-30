@@ -166,3 +166,6 @@ console.log(bestHowSum(300, [4, 6, 7, 14]));
 const bestBestSum = (targetNumber, numbers, memo) => {
   if (targetNumber in memo) return memo[targetNumber];
 };
+
+console.log(bestHowSum(9, [2, 3, 6]));
+console.log(bestHowSum(300, [4, 6, 7, 14]));
