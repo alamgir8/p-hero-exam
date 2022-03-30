@@ -140,6 +140,7 @@ const bestSum = (targetNumber, numbers) => {
 
   for (let num of numbers) {
     const reminder = targetNumber - num;
+    const reminderCombination = bestSum(reminder, numbers);
   }
 };
 
