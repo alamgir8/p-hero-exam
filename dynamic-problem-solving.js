@@ -182,6 +182,9 @@ const bestBestSum = (targetNumber, numbers, memo) => {
       }
     }
   }
+
+  memo[targetNumber] = shortestCombination;
+  return shortestCombination;
 };
 
 console.log(bestHowSum(9, [2, 3, 6]));
