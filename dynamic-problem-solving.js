@@ -169,6 +169,10 @@ const bestBestSum = (targetNumber, numbers, memo) => {
   if (targetNumber < 0) return null;
 
   let shortestCombination = null;
+  for (let num of numbers) {
+    const reminder = targetNumber - num;
+    const reminderCombination = bestBestSum(reminder, numbers, memo);
+  }
 };
 
 console.log(bestHowSum(9, [2, 3, 6]));
