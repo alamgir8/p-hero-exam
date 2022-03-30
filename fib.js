@@ -138,6 +138,8 @@ const bestSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
 
+  let shortestCombination = null;
+
   for (let num of numbers) {
     const reminder = targetNumber - num;
     const reminderCombination = bestSum(reminder, numbers);
