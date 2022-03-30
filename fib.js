@@ -147,6 +147,12 @@ const bestSum = (targetNumber, numbers) => {
     const reminderCombination = bestSum(reminder, numbers);
     if (reminderCombination !== null) {
       const combination = [...reminderCombination, num];
+      if (
+        shortestCombination === null ||
+        combination.length < shortestCombination.length
+      ) {
+        shortestCombination = combination;
+      }
     }
   }
 };
