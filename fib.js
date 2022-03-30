@@ -137,6 +137,10 @@ console.log(bestHowSum(300, [7, 14]));
 const bestSum = (targetNumber, numbers) => {
   if (targetNumber === 0) return [];
   if (targetNumber < 0) return null;
+
+  for (let num of numbers) {
+    const reminder = targetNumber - num;
+  }
 };
 
 console.log(bestHowSum(9, [2, 3, 6]));
