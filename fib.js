@@ -155,6 +155,8 @@ const bestSum = (targetNumber, numbers) => {
       }
     }
   }
+
+  return shortestCombination;
 };
 
 console.log(bestHowSum(9, [2, 3, 6]));
